@@ -28,7 +28,7 @@ public class BitmapUtils {
         FileOutputStream out = null;
         try {
             out = new FileOutputStream(f);
-            bitmap.compress(format, 90, out);
+            bitmap.compress(format, 100, out);
             out.flush();
         } catch (Exception e) {
             Logger.w(TAG, "bitmapToFile error", e);
